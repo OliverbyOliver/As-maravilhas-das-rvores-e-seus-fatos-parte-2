@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arvores legais</title>
+<style>
+header{
+    background-color: rgb(1, 129, 76);
+    color: azure;
+    padding: 16px;
+    text-align: center}
+
+main
+{background-color: rgb(1, 68, 12);
+    color: azure;
+    padding: 16px;}
+
+body
+{max-width: 1000px;
+    margin: 0 auto;}
+
+img
+{width: 352px;
+    height: 202px;}
+
+article
+{display: flex;}
+
+div
+{padding:  12px;}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Existem tantas árvores legais no mundo</h1>
+        <h3>Entre tanta ciencia e beleza nessas plantas, um disperdicío é a unica coisa que se pode dizer sobre sua falta de interesse em algo tão facinante</h3>
+    </header>
+    <main>
+        <article>
+
+            <img src="mudas de clonagem.png" alt=" Uma pequena muda verde com folhas compostas e alongadas cresce a partir de um solo escuro com Centenas de outras mudas idênticas estão organizadas em fileiras longas e perfeitamente alinhadas, cultivadas em sacos plásticos pretos de viveiro">
+            <div>
+                <h2>Fatos para se interessar</h2>
+                <p><h3>Por:Oliver Bach dos Santos</h3></p>
+                <h3>Pode haver quem saiba disso, mas, atualmente (em sua maioria) todas a árvores plantadas para uso comercial são CLONES, e muito possivelmente os móveis da sua casa sejam feitos com madeira clonada de outra árvore. loucura né?</h3>            
+            </div>
+            <button>❤️<span>0</span></button>
+            <button>😒<span>0</span></button>
+            <button>6️⃣7️⃣<span>0</span></button>
+            <button>💀<span>0</span></button>
+        </article>
+            
+        <article>
+            <img src="mudas de clonagem.png" alt=" Uma pequena muda verde com folhas compostas e alongadas cresce a partir de um solo escuro com Centenas de outras mudas idênticas estão organizadas em fileiras longas e perfeitamente alinhadas, cultivadas em sacos plásticos pretos de viveiro">
+            <div>
+                <h2>Fatos para se interessar</h2>
+                <p><h3>Por:Oliver Bach dos Santos</h3></p>
+                <h3>Pode haver quem saiba disso, mas, atualmente (em sua maioria) todas a árvores plantadas para uso comercial são CLONES, e muito possivelmente os móveis da sua casa sejam feitos com madeira clonada de outra árvore. loucura né?</h3>            
+            </div>
+            <button>❤️<span>0</span></button>
+            <button>😒<span>0</span></button>
+            <button>6️⃣7️⃣<span>0</span></button>
+            <button>💀<span>0</span></button>
+        </article>
+        </main>
+</body>
+<script>
+const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function(botao) {
+botao.addEventListener("click", botaoClicado);
+let curtiu = false
+
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+
+
+if(curtiu === false){
+    texto.textContent++;
+    curtiu = true;
+}
+else {
+texto.textContent--;
+curtiu = false;
+}
+}
+});
+</script>
+
+</html>
+
